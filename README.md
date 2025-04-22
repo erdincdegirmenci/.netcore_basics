@@ -1,4 +1,4 @@
-# DefineX Backend Project Template V2
+# Backend Project Template
 
 Uygulama geliştirme çalışmalarında birçok katman ve yardımcı modülle ile yapısal standartlara uygun backend altyapısı sunar. 
 
