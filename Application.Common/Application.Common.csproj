@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CustomException\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DefineXwork.Library" Version="1.0.21" />
+    <PackageReference Include="DefineXwork.Library.Security.Jwt" Version="1.0.4" />
+    <PackageReference Include="NETCore.MailKit" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>

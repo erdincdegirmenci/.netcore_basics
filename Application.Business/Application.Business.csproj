@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Attribute\" />
+    <Folder Include="Common\Extension\" />
+    <Folder Include="Common\Filter\" />
+    <Folder Include="Common\Handler\" />
+    <Folder Include="Common\Helper\" />
+    <Folder Include="Model\Request\UserContext\" />
+    <Folder Include="Model\Response\UserVerification\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="DefineXwork.Library.Business" Version="1.0.4" />
+    <PackageReference Include="DefineXwork.Library.Caching.MemoryCache" Version="1.0.1" />
+    <PackageReference Include="DefineXwork.Library.Logging.Database" Version="1.0.9" />
+    <PackageReference Include="DefineXwork.Library.Security.Common" Version="1.0.11" />
+    <PackageReference Include="DefineXwork.Library.Security.Jwt" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Common\Application.Common.csproj" />
+    <ProjectReference Include="..\Application.Domain\Application.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

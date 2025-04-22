@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="DefineXwork.Library.Caching.MemoryCache" Version="1.0.1" />
+    <PackageReference Include="DefineXwork.Library.Security.Common" Version="1.0.11" />
+    <PackageReference Include="DefineXwork.Library.Security.Jwt" Version="1.0.4" />
+    <PackageReference Include="DefineXwork.Library.Transaction" Version="1.0.4" />
+    <PackageReference Include="DefineXwork.Library.Utility.Swagger" Version="1.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Business\Application.Business.csproj" />
+    <ProjectReference Include="..\Application.Common\Application.Common.csproj" />
+  </ItemGroup>
+
+</Project>

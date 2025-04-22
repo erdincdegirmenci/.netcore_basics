@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataAccess\Model\Corresp\**" />
+    <EmbeddedResource Remove="DataAccess\Model\Corresp\**" />
+    <None Remove="DataAccess\Model\Corresp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\Common\" />
+    <Folder Include="Integration\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DefineXwork.Library.DataAccess" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Common\Application.Common.csproj" />
+  </ItemGroup>
+
+</Project>
